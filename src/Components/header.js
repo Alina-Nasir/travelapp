@@ -8,12 +8,12 @@ function Header() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Musafir-Pakistan</Navbar.Brand>
+        <Navbar.Brand>Musafir-Pakistan</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">About us</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/about">About us</Nav.Link>
             <NavDropdown title="Travel" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Group Tours</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -21,7 +21,7 @@ function Header() {
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Destinations</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/contact">
                 Contact Us
               </NavDropdown.Item>
             </NavDropdown>
