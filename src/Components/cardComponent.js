@@ -15,12 +15,7 @@ class CardComponent extends React.Component {
             <Card.Title>{this.props.obj.title}</Card.Title>
             <Card.Text>{this.props.obj.text}</Card.Text>
             <Button variant="primary" style={{backgroundColor:'green'}} path={"blog/:id"}
-            to={'/display-blog/' + this.props.obj._id}>View Details</Button>
-            <Link className="edit-link" path={"product/:id"}
-            to={'http://localhost:4000/blogs/display-blog/' + this.props.obj._id}
-          >
-            Display
-          </Link>
+            href={'/display-blog/' + this.props.obj._id}>View Details</Button>
             </Card.Body>
         </Card>
       );
