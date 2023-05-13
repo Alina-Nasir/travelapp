@@ -28,8 +28,8 @@ function App() {
     <Route exact path='/about' element={< About />}></Route>
     <Route exact path='/contact' element={< Contact />}></Route>
     {/* <Route exact path='/blogpost' element={< BlogPost />}></Route> */}
+    <Route exact path="/display-blog/:id" element={<BlogPost/>}></Route>
     </Routes>
-    
     </div>
    
   );
